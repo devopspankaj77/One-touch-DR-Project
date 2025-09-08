@@ -38,3 +38,10 @@ module "velero" {
 module "app" {
   source = "./modules/app"
 }
+
+
+module "monitoring" {
+  source              = "./modules/monitoring"
+  monitoring_namespace = "monitoring"
+  slack_webhook_url    = "https://hooks.slack.com/services/T000/B000/XXXX"
+}
