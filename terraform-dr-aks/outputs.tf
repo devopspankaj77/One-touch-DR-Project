@@ -1,3 +1,9 @@
-output "aks_name" { value = var.aks_name }
-output "acr_name" { value = var.acr_name }
-output "storage_account_name" { value = var.storage_account_name }
+output "aks_cluster_name" {
+  value = module.aks.cluster_name
+}
+output "acr_login_server" {
+  value = module.acr.login_server
+}
+output "storage_account_name" {
+  value = module.storage.storage_account_name
+}

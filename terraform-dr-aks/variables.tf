@@ -1,8 +1,14 @@
-variable "project_name" { type = string }
-variable "location" { type = string }
-variable "resource_group_name" { type = string }
-variable "aks_name" { type = string }
-variable "acr_name" { type = string }
-variable "node_count" { type = number }
-variable "node_size" { type = string }
-variable "storage_account_name" { type = string }
+variable "subscription_id" {}
+variable "tenant_id" {}
+variable "location" {
+  default = "East US"
+}
+variable "resource_group_name" {
+  default = "rg-dr-aks"
+}
+variable "aks_node_count" {
+  default = 2
+}
+variable "aks_node_size" {
+  default = "Standard_DS2_v2"
+}

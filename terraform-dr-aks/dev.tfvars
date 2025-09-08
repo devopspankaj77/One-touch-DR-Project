@@ -1,8 +1,6 @@
-project_name         = "microshop-dev"
-location             = "eastus"
-resource_group_name  = "rg-microshop-dev"
-aks_name             = "aks-microshop-dev"
-acr_name             = "acrmicroshopdev"
-node_count           = 2
-node_size            = "Standard_DS2_v2"
-storage_account_name = "velerostorage123dev"
+subscription_id     = "xxxx-xxxx-xxxx"
+tenant_id           = "xxxx-xxxx-xxxx"
+resource_group_name = "rg-dev-dr"
+location            = "East US"
+aks_node_count      = 2
+aks_node_size       = "Standard_DS2_v2"
